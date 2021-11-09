@@ -1,0 +1,3 @@
+#!/bin/tcsh
+
+find . -name "*cdslck*" -exec rm -rf {} \;

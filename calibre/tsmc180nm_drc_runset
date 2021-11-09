@@ -1,0 +1,29 @@
+*drcRulesFile: $pdk_dir/Calibre/drc/DRC_Calibre_0.18um_0.16um_0.152um_LO_MM_RF_1.5V_1.8V_2.5V_3.3V_5V_215a/CLM18_LM16_LM152_6M.215a
+*drcRulesFileLastLoad: 1528903825
+*drcRunDir: $PWD/calibre/drc
+*drcLayoutPaths: feedback_loop_pads_sealring.calibre.db
+*drcLayoutPrimary: feedback_loop_pads_sealring
+*drcLayoutLibrary: feedback_loop
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: feedback_loop_pads_sealring.drc.results
+*drcResultsCheckText: 1
+*drcResultsCheckTextValue: ALL
+*drcCellName: 0
+*drcDRCMaxResultsAll: 1
+*drcSummaryFile: feedback_loop_pads_sealring.drc.summary
+*drcActiveRecipe: Checks selected in the rules file (Modified)
+*drcUserRecipes: {{Checks selected in the rules file (Modified)} {{group_unselect[1]} all {group_select[1]} rule_file {group_unselect[2]} density {check_unselect[1]} DRM.R.1}}
+*drcIncrDRCSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*drcIncrDRCLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*drcIncrDRCGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnWarnLayoutOverwrite: 0
+*cmnShowOptions: 1
+*cmnResolution: 5
+*cmnRunMT: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: feedback_loop
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: feedback_loop_pads_sealring.def
