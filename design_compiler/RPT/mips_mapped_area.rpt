@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : mips
+Version: P-2019.03-SP5
+Date   : Tue Nov  9 19:11:59 2021
+****************************************
+
+Library(s) Used:
+
+    sclib_tsmc180_ss (File: /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/sclib_tsmc180_ss_nldm.db)
+    USERLIB (File: /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/rf2hs8x8/rf2hsm1wm1_slow_syn.db)
+
+Number of ports:                         1073
+Number of nets:                          2133
+Number of cells:                         1182
+Number of combinational cells:           1065
+Number of sequential cells:                76
+Number of macros/black boxes:               1
+Number of buf/inv:                        116
+Number of references:                       3
+
+Combinational area:              14999.866438
+Buf/Inv area:                      970.435221
+Noncombinational area:            3824.822372
+Macro/Black Box area:             8693.214844
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 27517.903654
+Total area:                 undefined
+1
