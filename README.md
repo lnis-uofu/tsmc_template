@@ -2,7 +2,7 @@
 
 
 11/9/2021
-added the synthesized netlist with the repo. synthesis need not be performed.
+added the synthesized netlist with the repo. mips synthesis need not be performed.
 To change this in the future, delete HDL/GATE, delete design_compiler/HDL/GATE, delete design_compiler/SDC, delete design_compiler/SDF, delete design_compiler/RPT
 
 
