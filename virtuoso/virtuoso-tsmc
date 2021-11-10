@@ -1,0 +1,25 @@
+#!/bin/tcsh
+######################################
+# Startup script for Cadence Virtuoso 
+######################################
+echo "\nYour working directory is" $PWD "\n"
+
+#setenv setup_dir /research/ece/lnis-teaching/5710_6710_F20
+setenv pdk_dir /research/ece/lnis-teaching/Designkits/tsmc180nm/pdk
+#setenv virtuoso_setup_files $setup_dir/Lab_files/virtuoso
+
+source ../remove_locks
+
+setenv OA_UNSUPPORTED_PLAT linux_rhel50_gcc44x
+setenv CDS_AUTO_64BIT  ALL 
+setenv CDS_Netlisting_Mode "Analog"
+
+setenv RUNSET_DIR ../calibre
+setenv MGC_CALIBRE_DRC_RUNSET_FILE $RUNSET_DIR/tsmc180nm_drc_runset
+setenv MGC_CALIBRE_LVS_RUNSET_FILE $RUNSET_DIR/tsmc180nm_lvs_runset
+setenv MGC_CALIBRE_PEX_RUNSET_FILE $RUNSET_DIR/tsmc180nm_pex_runset
+setenv CALIBRE_DISABLE_RHEL5_WARNING 1
+
+
+# Start up Virtuoso - with arguments if any
+\virtuoso $argv &
