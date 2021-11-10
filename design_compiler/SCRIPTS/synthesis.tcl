@@ -1,6 +1,6 @@
 # The period has to be changed to see if the design can meet the timing constraint
 #Same for the clk_name when using a different design.
-set clk_period 20
+set clk_period 6
 set clk_name clk
 
 #  Define the name of the top module to be synthesized.
@@ -79,7 +79,7 @@ report_power -nosplit -analysis_effort low > ${RPT_DIR}/${design}_mapped_power.r
 #  Generate the Verilog netlist
 puts "-i- Generate Verilog netlist"
 write_file -format verilog -hierarchy -output ${GATE_DIR}/${design}_mapped.v
-write_file -format verilog -hierarchy -output ../${GATE_DIR}/${design}_mapped.v
+write_file -format verilog -hierarchy -output ${BASE_DIR}/../HDL/GATE/${design}_mapped.v
 
 #  Generate the design constraint file
 puts "-i- Generate SDC design constraint file"
