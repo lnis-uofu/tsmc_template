@@ -5,12 +5,12 @@ setenv pdk_tsmc180_dir 			$class_dir/Designkits/tsmc180nm
 
 
 # Create subdirectory for verilog/VHDL files
-if !( -f ${PWD}/HDL/GATE) then
+if !( -d ${PWD}/HDL/GATE) then
   mkdir ${PWD}/HDL/GATE
 endif
 
 # Create subdirectory for verilog/VHDL files
-if !( -f ${PWD}/HDL/PLACED) then
+if !( -d ${PWD}/HDL/PLACED) then
   mkdir ${PWD}/HDL/PLACED
 endif
 
@@ -21,33 +21,33 @@ endif
 ##############
 
 # Create sdc directory 
-if !( -f ${PWD}/design_compiler/SDC) then
+if !( -d ${PWD}/design_compiler/SDC) then
   mkdir ${PWD}/design_compiler/SDC
 endif
 
 # Create dlib directory 
-if !( -f ${PWD}/design_compiler/DDC) then
+if !( -d ${PWD}/design_compiler/DDC) then
   mkdir ${PWD}/design_compiler/DDC
 endif
 
-if !( -f ${PWD}/design_compiler/SDF) then
+if !( -d ${PWD}/design_compiler/SDF) then
   mkdir ${PWD}/design_compiler/SDF
 endif
 
 # Create RPT directory 
-if !( -f ${PWD}/design_compiler/RPT) then
+if !( -d ${PWD}/design_compiler/RPT) then
   mkdir ${PWD}/design_compiler/RPT
 endif
 
 
 # Create DESIGN_LIBS directory 
-if !( -f ${PWD}/design_compiler/DESIGN_LIBS) then
+if !( -d ${PWD}/design_compiler/DESIGN_LIBS) then
   mkdir ${PWD}/design_compiler/DESIGN_LIBS
 endif
 
 
 # Create subdirectory for verilog/VHDL files
-if !( -f ${PWD}/design_compiler/HDL/GATE) then
+if !( -d ${PWD}/design_compiler/HDL/GATE) then
   mkdir ${PWD}/design_compiler/HDL/GATE
 endif
 
@@ -58,21 +58,21 @@ endif
 ##################
 
 # Create DBS directory 
-if !( -f ${PWD}/innovus/DBS) then
+if !( -d ${PWD}/innovus/DBS) then
   mkdir ${PWD}/innovus/DBS
 endif
 
 # Create GDS directory 
-if !( -f ${PWD}/innovus/GDS) then
+if !( -d ${PWD}/innovus/GDS) then
   mkdir ${PWD}/innovus/GDS
 endif
 
 # Create RPT directory 
-if !( -f ${PWD}/innovus/RPT) then
+if !( -d ${PWD}/innovus/RPT) then
   mkdir ${PWD}/innovus/RPT
 endif
 
-if !( -f ${PWD}/innovus/SDF) then
+if !( -d ${PWD}/innovus/SDF) then
   mkdir ${PWD}/innovus/SDF
 endif
 
@@ -88,39 +88,39 @@ endif
 
 
 
-if !( -f ${PWD}/virtuoso/calibre) then
+if !( -d ${PWD}/virtuoso/calibre) then
   mkdir ${PWD}/virtuoso/calibre
 endif
 
 
 # Create drc, lvs, and pex directories
-if !( -f ${PWD}/virtuoso/calibre/drc) then
+if !( -d ${PWD}/virtuoso/calibre/drc) then
   mkdir ${PWD}/virtuoso/calibre/drc
 endif
 
-if !( -f ${PWD}/virtuoso/calibre/drcmetalfill) then
+if !( -d ${PWD}/virtuoso/calibre/drcmetalfill) then
   mkdir ${PWD}/virtuoso/calibre/drcmetalfill
 endif
 
-if !( -f ${PWD}/virtuoso/calibre/drcpolyfill) then
+if !( -d ${PWD}/virtuoso/calibre/drcpolyfill) then
   mkdir ${PWD}/virtuoso/calibre/drcpolyfill
 endif
 
-if !( -f ${PWD}/virtuoso/calibre/lvs) then
+if !( -d ${PWD}/virtuoso/calibre/lvs) then
   mkdir ${PWD}/virtuoso/calibre/lvs
 endif
 
-if !( -f ${PWD}/virtuoso/calibre/pex) then
+if !( -d ${PWD}/virtuoso/calibre/pex) then
   mkdir ${PWD}/virtuoso/calibre/pex
 endif
 
 # Create libs directory for your own librairies
-if !( -f ${PWD}/virtuoso/libs) then
+if !( -d ${PWD}/virtuoso/libs) then
   mkdir ${PWD}/virtuoso/libs
 endif
 
 # Create simulation directory for Spectre/eldo/Hspice results
-if !( -f ${PWD}/virtuoso/simulation) then
+if !( -d ${PWD}/virtuoso/simulation) then
   mkdir ${PWD}/virtuoso/simulation
 endif
 
@@ -131,12 +131,12 @@ endif
 ##################
 
 # Create RPT directory 
-if !( -f ${PWD}/modelsim) then
+if !( -d ${PWD}/modelsim) then
   mkdir ${PWD}/modelsim
 endif
 
 # Create RPT directory 
-if !( -f ${PWD}/modelsim/PROJECTS) then
+if !( -d ${PWD}/modelsim/PROJECTS) then
   mkdir ${PWD}/modelsim/PROJECTS
 endif
 
