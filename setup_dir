@@ -62,7 +62,10 @@ if !( -f ${PWD}/innovus/DBS) then
   mkdir ${PWD}/innovus/DBS
 endif
 
-
+# Create GDS directory 
+if !( -f ${PWD}/innovus/GDS) then
+  mkdir ${PWD}/innovus/GDS
+endif
 
 # Create RPT directory 
 if !( -f ${PWD}/innovus/RPT) then
@@ -126,6 +129,12 @@ endif
 ##################
 # Mentor Modelsim
 ##################
+
+# Create RPT directory 
+if !( -f ${PWD}/modelsim) then
+  mkdir ${PWD}/modelsim
+endif
+
 # Create RPT directory 
 if !( -f ${PWD}/modelsim/PROJECTS) then
   mkdir ${PWD}/modelsim/PROJECTS
